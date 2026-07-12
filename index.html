@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noir AI - 你的全能 Discord 智慧夥伴</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-color: #0b0c10;
+            --card-bg: rgba(31, 40, 51, 0.4);
+            --text-color: #c5c6c7;
+            --accent-color: #66fcf1;
+            --accent-hover: #45a29e;
+            --text-bright: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* 背景微光特效 */
+        body::before {
+            content: '';
+            position: fixed;
+            top: -10%;
+            left: -10%;
+            width: 120%;
+            height: 120%;
+            background: radial-gradient(circle, rgba(102,252,241,0.05) 0%, transparent 70%);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--text-bright);
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 6rem 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            color: var(--text-bright);
+            margin-bottom: 1.5rem;
+            font-weight: 800;
+        }
+
+        .hero h1 span {
+            background: linear-gradient(45deg, var(--accent-color), #4facfe);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2.5rem;
+            max-width: 600px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+            padding: 0.8rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 252, 241, 0.2);
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 252, 241, 0.4);
+        }
+
+        .features {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 5% 4rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 2.5rem;
+            border-radius: 15px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(102, 252, 241, 0.3);
+        }
+
+        .feature-card i {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-card h3 {
+            color: var(--text-bright);
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card p {
+            font-size: 0.95rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 4rem 1rem 2rem;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Noir <span>AI</span></div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>讓 <span>Noir AI</span> 點亮你的 Discord 社群</h1>
+            <p>由高效能的 Gemini 3.1 Flash-Lite 模型驅動，將智慧對話與高品質音樂播放完美結合的娛樂夥伴！</p>
+            <a href="https://discord.com/oauth2/authorize?client_id=1385621279842762812" class="btn" target="_blank">
+                <i class="fab fa-discord"></i> 邀請機器人加入
+            </a>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Gemini 3.1 極速核心</h3>
+                <p>搭載 Gemini 3.1 Flash-Lite，具備超低延遲與優異的語意理解，指令秒發秒回不卡頓。</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-music"></i>
+                <h3>高品質音樂播放</h3>
+                <p>支援語音頻道點歌與流暢的音效控制，無損音質讓伺服器成員一同享受完美的音樂饗宴。</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-comments"></i>
+                <h3>流暢智慧對話</h3>
+                <p>精通各種話題與語境，不管是日常閒聊還是專業問答，都能提供自然且富有深度的對話互動。</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Noir AI. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
