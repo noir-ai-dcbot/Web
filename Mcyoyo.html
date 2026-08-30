@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>歡迎來到 Yoyo 的官方個人主頁</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #0f0f0f;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: #1f1f1f;
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: #ff0000;
+            margin: 0 auto 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 48px;
+            font-weight: bold;
+            color: #ffffff;
+            box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        p.bio {
+            color: #aaa;
+            font-size: 16px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .channel-card {
+            background: #2a2a2a;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: left;
+            transition: transform 0.2s, background 0.2s;
+            border: 1px solid #333;
+        }
+        .channel-card:hover {
+            transform: translateY(-3px);
+            background: #333333;
+        }
+        .channel-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .channel-handle {
+            color: #ff4e4e;
+            font-size: 14px;
+        }
+        .channel-desc {
+            color: #bbb;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .btn {
+            display: inline-block;
+            width: 100%;
+            padding: 12px;
+            background-color: #ff0000;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            text-align: center;
+            transition: background-color 0.2s;
+        }
+        .btn:hover {
+            background-color: #cc0000;
+        }
+        footer {
+            margin-top: 30px;
+            color: #666;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="profile-img">Y</div>
+    <h1>Hello, 我是 Yoyo！</h1>
+    <p class="bio">歡迎來到我的個人網站！這裡是我分享創作與生活的地方，歡迎訂閱我的 YouTube 頻道一起交流。</p>
+
+    <div class="channel-card">
+        <div class="channel-title">
+            Yoyo 個人主頻道
+        </div>
+        <div class="channel-handle">@Yoyo-j7teeeee</div>
+        <p class="channel-desc">分享日常、各類創作與精采影片內容，歡迎追蹤我的最新動態！</p>
+        <a href="https://youtube.com/@Yoyo-j7teeeee" target="_blank" class="btn">前往訂閱 @Yoyo-j7teeeee</a>
+    </div>
+
+    <div class="channel-card">
+        <div class="channel-title">
+            MCYoyo 頻道
+        </div>
+        <div class="channel-handle">@mcyoyo_tw</div>
+        <p class="channel-desc">專屬內容與多元主題分享，點擊下方按鈕觀看更多精采內容！</p>
+        <a href="https://youtube.com/@mcyoyo_tw" target="_blank" class="btn">前往訂閱 @mcyoyo_tw</a>
+    </div>
+
+    <footer>
+        &copy; 2026 Yoyo. All Rights Reserved.
+    </footer>
+</div>
+
+</body>
+</html>
